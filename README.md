@@ -1,4 +1,4 @@
-## Add your html design files in template/pages folder
+## Add your html design files in template folder
 
 ## CSS to static/css folder
 
