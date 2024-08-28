@@ -1,18 +1,17 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FertiSmart</title>
-    <link rel="stylesheet" href="{% static 'css/base.css'%}">
+    <link rel="stylesheet" href="../static/css/base.css">
 </head>
 <body>
   
     <!-- Navbar start -->
       <nav class="header">
         <div class="title"> 
-          <a href="{{url '/'}}">
+          <a href="#">
             <h1>Ferti Smart</h1>
           </a>
         </div>
@@ -24,47 +23,61 @@
         </div>
 
         <div class="header-right" id="header-right">
-          <a class="text" href="{{ url 'about' }}">Sustainability</a>
-          <a class="text" href="{{ url 'about' }}">Testing Center</a>
-          <a class="text" href="{{ url 'about' }}">About</a>
+          <a class="text" href="#">Home</a>
+          <a class="text" href="">Soil Analysis</a>
+          <a class="text" href="">Crop-Yield Pridiction</a>
+          <a class="text" href="">Sustainability</a>
+          <a class="text" href="">About</a>
         </div>
       </nav>
     <!-- Navbar Ends -->
 
-
+    <div class="ns" style="height: 200vh; background-color: aqua;width: 100%;"></div>
 
     <!-- Footer start -->
     <footer class="footer">
       <div class="footer-container">
           <div class="footer-links">
               <div class="footer-column">
-                <img src="{% static 'assets/pngegg.png' %}}" alt="Logo" class="footer-logo-img">
+                <img src="../static/assets/pngegg.png" alt="Logo" class="footer-logo-img">
               </div>
               <div class="footer-column">
-                  <h3>Resources</h3>
+                  <h3>Ministry</h3>
                   <ul>
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li><a href="#">Link 4</a></li>
+                      <li><a href="#">Agriculture</a></li>
+                      <li><a href="#">Food</a></li>
+                      <li><a href="#">Rural Development</a></li>
+                      <li><a href="#">Home Ministry</a></li>
+                      <li><a href="#">Education</a></li>
                   </ul>
               </div>
               <div class="footer-column">
-                  <h3>Services</h3>
+                  <h3>About us</h3>
                   <ul>
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li><a href="#">Link 4</a></li>
+                      <li><a href="#">Smart India Hackthon</a></li>
+                      <li><a href="#">University of Lucknow</a></li>
+                      <li><a href="#">Central Government</a></li>
+                      <li><a href="#">State Government</a></li>
+                      <li><a href="#">Niti Ayog</a></li>
                   </ul>
               </div>
               <div class="footer-column">
-                  <h3>Contact</h3>
+                  <h3>Terms & Condition</h3>
                   <ul>
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li><a href="#">Link 4</a></li>
+                      <li><a href="#">Website Policy</a></li>
+                      <li><a href="#">Help</a></li>
+                      <li><a href="#">Feedback</a></li>
+                      <li><a href="#">Order & Notices</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Quick links</h3>
+                  <ul>
+                      <li><a href="#">Weather</a></li>
+                      <li><a href="#">Crop Names</a></li>
+                      <li><a href="#">Visitors</a></li>
+                      <li><a href="#">Contact us</a></li>
+                      <li><a href="#">FAQs</a></li>
                   </ul>
               </div>
           </div>
