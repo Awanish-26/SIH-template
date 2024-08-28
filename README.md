@@ -1,5 +1,5 @@
-##Add your html design files in template/pages folder
+## Add your html design files in template/pages folder
 
-##CSS to static/css folder
+## CSS to static/css folder
 
-##and additional images in static/assets folder
+## additional images in static/assets folder
