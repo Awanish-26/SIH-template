@@ -1,7 +1,13 @@
-## Add your html design files in template folder
+#Test branch
 
-## CSS to static/css folder
+## Everryone should submit there there work on test branch and being passed by test it should be commited on main branch
 
-## additional images in static/assets folder
+### Add your html design files in template folder
 
-# work on test branch
+### CSS, js file in to static/css folder
+
+### additional images in static/assets folder
+
+# remeber to put your name in comment at top of your every file you commit
+
+
