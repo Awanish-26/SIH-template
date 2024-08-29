@@ -1,6 +1,6 @@
 #Test branch
 
-## Everryone should submit there there work on test branch and being passed by test it should be commited on main branch
+## Everyone should submit there there work on test branch and being passed by test it should be commited on main branch
 
 ### Add your html design files in template folder
 
