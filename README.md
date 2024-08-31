@@ -27,7 +27,7 @@ This <b>Ferti-Smart</b> aims to address the pressing issue of soil degradation c
 2)In the terminal open the file and just type <b> python manage.py runserver</b></br>
 3)Copy the url Provided by the terminal that looks like:-<b>http://127.0.0.1:8000/</b></br>
 4)Paste it in browser and click enter
-## Note:- The individual page template are being kept in feature branch and main project in main branch
+## Note:- The individual page template are being kept in feature branch and main project in main branch and test branch contain incorrect or unfinished code used for testing.
 
 
 
