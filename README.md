@@ -23,7 +23,7 @@ This <b>Ferti-Smart</b> aims to address the pressing issue of soil degradation c
 5)Awanish_Yadav</br>
 6)Ayush_Jindal/br>
 <b>Every Team Memeber is free to clone and add repo to there own personal repo</b>
-## Steps to run Program
+## Steps to Run Program
 1)<b>Python3</b> version must be installed</br>
 2)In the terminal open the file and just type <b> python manage.py runserver</b></br>
 3)Copy the url Provided by the terminal that looks like:-<b>http://127.0.0.1:8000/</b></br>
