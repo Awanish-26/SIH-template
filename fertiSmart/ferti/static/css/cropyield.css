@@ -1,71 +1,88 @@
 /*this is crop yield prediction css file created by khushi*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{  /*setting background img*/
     background:linear-gradient( rgba(0, 0, 0,0.3), rgba(0, 0, 0,0.3)),url(../assets/background.png);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-.nav{
-   height: 50px;
+
+.cy{
+    display: flex;
+    justify-content: center;
 }
+
 .crop-yield-details{   /*form styling*/
     background-color: #d9d9d9;
-    height: 630px;
+    height: 720px;
     width: 500px;
-    margin-top: 20px;
+    margin-block: 28px;
+    border-radius: 12px;
     box-shadow:0 4px 15px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
     /* box-shadow:0 4px 15px 0 rgba(255, 255, 255, 0.4), 0 6px 20px 0 rgba(255, 255, 255, 0.3); */
 }
-.cy{
-    display: flex;
-   /* flex-direction: row; */
-    justify-content: center;
-}
+
 h3{
   margin: 15px;
   font-size: 2rem;
   text-align: center;
+  border-bottom: 2px solid black;
 }
-h4{
+
+form{
+    padding: 8px 16px;
+}
+
+form label{
+    display: block;
     font-size: 1.5rem;
-    margin: 10px 20px;
+    margin-bottom: 6px;
 }
-form input,select{ /*styling of input and select tag */
+
+form input ,form select{ /*styling of input and select tag */
+    font-size: 16px;
     background-color: #eee;
-    height: 2rem;
-    width: 90%;
-    margin-left: 20px;
-    border-style: none;
+    width: 100%;
     outline: none;
-   font-size: 1rem;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 6px;
 }
-form input:hover,select:hover{
-    border:1px solid #c2c2c2;
+
+form input:focus,form select:focus{
+    border:2px solid #16b566;
+    transition: border 100ms ease-in-out;
 }
+
 .btn{
-    margin-top: 30px;
-    margin-left: 185px;
-    line-height: 3rem;
     height: 3rem;
     width: 10rem;
-    border-radius: 2rem;
     background-color: #fca311;
-    border-style: none;
+    margin-block: 30px;
+    margin-inline: 180px;
+    font-size: 16px;
     font-weight: 600;
+    border-radius: 2rem;
+    border-style: none;
+    line-height: 3rem;
 }
+
 .btn:hover{ /* button hover effect*/
-    border: 1px solid #c2c2c2;
     background-color: black;
     color: white;
+    transition: all 200ms ease-in-out;
 }
+
 .res{  /*result display*/
     color: #22223b;
     font-size: 1.5rem;
     text-align: center;
     margin-top: 19px;
+}
+
+@media screen and (max-width:786px) {
+    .btn{
+        margin-inline: 120px;
+    }
 }

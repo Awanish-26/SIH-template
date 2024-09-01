@@ -1,73 +1,281 @@
 /* Muklendra Pratap Rao */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-body{
-    background-image: url("/Images/field.jpg");
+.hero{
+    height: 89vh;
+    background: url(../assets/farm_1555304510.webp);
     background-size: cover;
-    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
-    
+    padding: 1rem;
+    display: flex;
 }
 
-/* Styling for all cards */
-.container{
-    margin:90px 0px 0px 250px;
-    padding: 10px;
-    height: 450px;
-    width: 1050px;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.5); /* Green overlay with 50% opacity */
+    z-index: 1;
+}
+
+.hero-one{
+    position: relative;
+    z-index: 2;
+}
+
+.hero-two{
+    position: relative;
+    top: 5rem;
+    display: inline;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 2;
+    video{
+        width: 480px;
+        border-radius: 8px;
+    }
+}
+
+
+.hero-intro > h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    span{
+        color: rgb(255, 8, 0);
+    }
+}
+
+.hero-intro > p{
+    font-size: 2rem;
+    color: yellow;
+    font-style: italic;
+    margin-bottom: 3.2rem;
+    span{
+        color: red;
+    }
+}
+
+.hero-button{
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.button-1 {
+    border: none;
+    color: rgb(24, 240, 255);
+    background: none;
+    cursor: pointer;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    margin-inline: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(24, 240, 255);
+}
+
+.button-1:hover {
+    transition-duration:all .2s;
+}
+
+/* Cards */
+
+.card{
     display: flex;
     justify-content: space-between;
-    background-color:  rgba(255, 255, 255, 0.7);
-    border-radius: 8px;
-    box-shadow: 6px 6px 5px 5px white;
-   
+    gap: 1rem;
+    padding: 2rem;
+    padding-block: 5rem;
 }
 
-/* For responsiveness */
-@media screen and (max-width: 786px) {
-    .container{          
-        flex-direction: column;
-        height: 90rem;
-        width: 20rem;
-        margin: 95px 0px 0px 20px;
-          }
+.card-1{
+    background: linear-gradient(135deg, #e0f7fa 0%, #f1f8e9 100%);
+}
+
+.card-2{
+    background-color: #f9fbe7;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card-title{
+    font-size: 32px;
+    color: #16b566;
+    margin-bottom: 10px;
+}
+
+.card-text{
+    font-size: 20px;
+    word-spacing: 8px;
+    font-family: "Merriweather", serif;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #333;
+}
+
+.separator {
+    box-sizing: content-box;
+    height: 2px;
+    position: relative;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.separator::after {
+    left: 3.125vw;
+    right: 3.125vw;
+    content: "";
+    background: linear-gradient(90deg,#84e1ff 5.73%,#81f18e 21.87%,#f9e63f 39.06%,#6ba6ff 57.29%,#e8f 76.04%,#ff7324 94.79%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.button{
+    width: min-content;
+    text-decoration: none;
+    margin-top: auto;
+    padding: 8px 40px;
+    font-size: 24px;
+    font-weight: 600;
+    outline: none;
+    background-color: #16b566;
+    border-radius: 4px;
+    color: white;
+}
+
+.button:hover{
+    background-color: #159957;
+    transition: backgroundcolor 0.2s ease-in-out;
+}
+
+.card-img-top{
+    height: 100%;
+    border-radius: 10px;
+}
+
+section{
+    height: 90vh;
+    padding: 2rem;
+    background: url(../assets/graleaf-shadows-white.jpg) no-repeat center cover;
+}
+
+.section-contanier{
+    display: flex;
+    gap: 5rem;
+}
+
+.section-body{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.section-text{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6rem;
+}
+
+.button-sec{
+    margin-top: auto;
+    width: auto;
+}
+
+.section-img{
+    display: inline;
+    width: 50%;
+    img{
+        width: 100%;
+        height: 100%;
+        border: 2px solid #16b566;
+        border-radius: 12px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .hero{
+        display: block;
+        padding: 2rem;
+        height: min-content;
+        position: relative;
+    }
+
+    .overlay{
+        overflow: hidden;
+        bottom: 0;
+        height: auto;
+    }
+
+    .hero-one{
+        width: auto;
+    } 
+
+    .hero-two{
+        top: auto;
+        display: block;
+        video{
+            margin-top: 1rem;
+            width: 100%;
+        }
+    }
+    .hero-intro > h1{
+        font-size: 3rem;
+    }
+    .hero-intro > p{
+        font-size: 1.4rem;
+    }
 
     .card{
-    margin-left: 30px;
-    margin-top: 20px;
-     }
-   
-  
-    body{
-    height: 120rem;
-   }
+        display: block;
+        padding: 2rem;
+    }
 
+    .card-title{
+        font-size: 28px;
+    }
+
+    .card-text{
+        font-size: 16px;
+    }
+
+    .card-img-top{
+        display: none;
+    }
+
+    .button{
+        margin-top: 2rem;
+        font-size: 14px;
+        padding: 4px 20px;
+    }
+
+    section{
+        height: auto;
+    }
+
+    .section-body {
+        width: auto;
+    }
+    .section-img{
+        width: auto;
+        display: none;
+        img{
+            display: none;
+        }
+    }
 }
 
-/* cards image styling */
-.card-img-top{
-    height: 240px;
-}
-
-/* All cards styling */
-.card{
-    margin: 8px;
-    box-shadow: 2px 2px 2px 2px black;
-}
-
-
-/* Cards hover effects */
-.card:hover{
-    height: 450px;
-    color: #0000009b;
-    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0);
-    transition-timing-function: ease-in-out ;
-    transition-delay: 0s;
-
-}
-
-/* cards buttons styling */
-.btn {
-    height: 40px;
-    width: 105px;
-}

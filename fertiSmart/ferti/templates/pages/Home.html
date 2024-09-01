@@ -2,47 +2,70 @@
 {% load static %}
 
 <!-- HOME Page Created By - Muklendra Pratap Rao -->
-<!--        This page is all about what we are offering through our website. 
-   We are providing services like - Soil Analysis And Fertilizer Prediction , Crop Yield Prediction  and information about Sustainable Farming.        -->
+<!--                                                                                                     This page is all about what we are offering through our website. 
+   We are providing services like - Soil Analysis And Fertilizer Prediction , Crop Yield Prediction  and information about Sustainable Farming.                                                                                                     -->
 
 {% block Link %}
   <link rel="stylesheet" href="{% static 'css/Home.css' %}" /> <!-- CSS file link's here -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /> <!-- Link for CSS from bootstrap -->
 {% endblock %}
 
 {% block content %}
-  <!-- Section-1 -->
-  <!-- Container which contains all three cards div -->
-  <div class="container" style="margin-bottom:2rem; margin-top:3rem;">
-    <!-- div for card One -->
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="{% static 'assets/soil.jpg' %}" alt="Not Availabel" />
-      <div class="card-body">
-        <h5 class="card-title">Soil Analysis And Fertilizer Prediction</h5>
-        <p class="card-text">To start soil analysis and fertilization prediction please click on start button.</p>
-        <a href="{%url 'soilAnalysis'%}" class="btn btn-primary">Start</a>
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="hero-one">
+      <div class="hero-intro">
+        <h1>Boost Your Crop Yield with <span>Precision</span> Farming</h1>
+        <p>
+          Get tailored <span>fertilizer recommendations</span> and <span>crop yield predictions</span> based on soil and weather conditions
+        </p>
+      </div>
+      <div class="hero-button">
+        <p>
+          Start Your Free Analysis
+          <button class="button-1" role="button">Learn More</button>
+        </p>
       </div>
     </div>
-
-    <!-- div for card two -->
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="{% static 'assets/crop.jpg' %}" alt="Not Availabel" />
-      <div class="card-body">
-        <h5 class="card-title">Crop Yield Prediction</h5>
-        <p class="card-text">To start crop yield prediction please click on start button.</p> <br />
-        <a href="{% url 'cropYield'%}" class="btn btn-primary">Start</a>
-      </div>
-    </div>
-
-    <!-- div for card three -->
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="{% static 'assets/sustainable.jpg' %}" alt="Not Avialbel" />
-      <div class="card-body">
-        <h5 class="card-title">Sustainable Farming</h5>
-        <p class="card-text">To know more about sustainable development please click on Know more button.</p>
-        <a href="{% url 'sustainability'%}" class="btn btn-primary">Know More</a>
-      </div>
+    <div class="hero-two">
+      <video src="{% static 'assets/intro-video.webm' %}" controls></video>
     </div>
   </div>
+
+  <div class="card card-1">
+    <div class="card-body">
+      <h2 class="card-title">Soil Analysis And Fertilizer Prediction</h2>
+      <hr class="separator" />
+      <p class="card-text">Unlock the full potential of your crops with our advanced soil analysis and fertilizer prediction tools. Accurate insights of your soil's nutrient composition, helping you make informed decisions to boost crop yield.</p>
+      <a href="#" class="button">Start</a>
+    </div>
+    <div>
+      <img class="card-img-top" src="{% static 'assets/soil.jpg' %}" alt="Not Availabel" />
+    </div>
+  </div>
+
+  <div class="card card-2">
+    <div class="">
+      <img class="card-img-top" src="{% static 'assets/crop.jpg' %}" alt="Not Availabel" />
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Crop Yield Prediction</h5>
+      <hr class="separator" />
+      <p class="card-text">Harness the power of data-driven insights to predict your crop yield with precision. Our advanced prediction tools analyze key factors like soil health, weather patterns, and crop type, giving you a clear forecast to plan your farming strategy. Take the guesswork out of farming and ensure a bountiful harvest season after season.</p>
+      <a href="#" class="button">Start</a>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-contanier">
+      <div class="section-body">
+        <h5 class="card-title">Sustainable Farming</h5>
+        <hr class="separator" />
+        <p class="section-text">To know more about sustainable development please click on Know more button. Join the movement towards a greener future with our sustainable farming solutions. By adopting eco-friendly practices, you can reduce environmental impact while enhancing soil health and crop resilience. Our platform provides actionable insights and resources to help you implement sustainable methods that conserve water, reduce chemical use, and promote biodiversity.</p>
+        <a href="" class="button button-sec">Know More</a>
+      </div>
+      <div class="section-img">
+        <img src="{% static 'assets/sustainable.png' %}" alt="Not Availabel" />
+      </div>
+    </div>
+  </section>
 {% endblock %}

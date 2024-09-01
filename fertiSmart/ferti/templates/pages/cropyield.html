@@ -10,13 +10,13 @@
   <div class="cy">
     <!-- container which contain all div tag -->
     <div class="crop-yield-details">
+      <h3>Crop Yield Prediction</h3>
       <!-- form for yield prediction -->
       <form action="#" class="form">
-        <h3>Crop Yield Prediction</h3>
-        <h4>Yield Area:</h4>
+        <label for="area">Yield Area:</label>
         <input name="area" type="number" class="Area" placeholder=" Enter Area(in hectare)" required />
-        <h4>Crop Type:</h4>
         <!-- creating drop-down for crop type -->
+        <label for="crop-type">Crop Type:</label>
         <select class="crop-type">
           <option value="1">Wheat</option>
           <option value="2">Rice</option>
@@ -27,12 +27,15 @@
           <option value="7">Gram</option>
           <option value="8">Others</option>
         </select>
-        <h4>Temperature:</h4>
+
+        <label for="temp">Temperature:</label>
         <input type="number" name="temp" placeholder=" Temperature (in celsius)" required />
-        <h4>Humidity:</h4>
+
+        <label for="humid">Humidity:</label>
         <input type="number" name="humid" placeholder="Enter soil Humidity (in %)" required />
-        <h4>State:</h4>
+
         <!-- creating drop-down for state -->
+        <label for="state">State :</label>
         <select class="state">
           <option>Andhra Pradesh</option>
           <option>Arunachal Pradesh</option>
