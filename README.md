@@ -44,8 +44,8 @@ _Every Team Memeber is free to clone and add repo to there own personal repo_
 2.Create a Virtual Environment by typing `python -m venv env` in terminal.\
 3.Activate Virtual Environment by typing `env\Scripts\activate` and \
 4.Install the required dependencies by running `pip install requirement.txt` \
-2.Run the Project `cd fertiSmart` and `python manage.py runserver`\
-3.Copy the url Provided by the terminal that looks like:--**http://127.0.0.1:8000/** \
-4.Paste it in browser and click enter
+5.Run the Project `cd fertiSmart` and `python manage.py runserver`\
+6.Copy the url Provided by the terminal that looks like:--**http://127.0.0.1:8000/** \
+7.Paste it in browser and click enter
 
 ## Note:- The individual page template,Css styles and images are being kept in feature branch and main project in main branch and test branch contain incorrect or unfinished code used for testing.
