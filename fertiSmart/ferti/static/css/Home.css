@@ -72,7 +72,6 @@
     font-size: 18px;
     font-weight: 600;
     outline: none;
-    margin-inline: 16px;
     text-align: center;
     text-decoration: none;
     border-bottom: 2px solid rgb(24, 240, 255);
@@ -162,11 +161,18 @@
 
 .card-img-top{
     height: 100%;
-    border-radius: 10px;
+    img{
+        border-radius: 10px;
+        border: 2px solid #16b566;
+    }
+}
+
+.card-img-top img:hover{
+    transform: translateY(-10px);
+    transition: transform 150ms ease-in;
 }
 
 section{
-    height: 90vh;
     padding: 2rem;
     background: url(../assets/graleaf-shadows-white.jpg) no-repeat center cover;
 }

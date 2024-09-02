@@ -31,14 +31,14 @@ body{
 
 /* Intro section styling */
 .intro ,.needs ,.benefits,  .goals{
-    border: 2px solid white;
-    border-radius: 5px;
-    color: rgb(34, 29, 29);
-    background-color: rgb(119, 221, 209);
-    padding: 5px;
+    position: relative;
     display: flex;
-    margin: 5px;
+    margin: 12px;
     padding: 1rem;
+    color: #212121;
+    background-color: #77ddd1;
+    border-radius: 5px;
+    border: 2px solid white;
     box-shadow: 2px 2px 2px 2px white;
 }
 
@@ -50,14 +50,21 @@ body{
     box-shadow: 5px 5px 5px 5px white;
 }
 
-.intro-text , .benefits-text , .need-text ,.goal-text-contain {
+.intro-text , .benefits-text , .need-text ,.goals-text {
     font-size: 24px;
     margin: 2rem 3.2rem;
 }
 
-.goal-img-contain{
+.goal-img{
+    position: absolute;
+    display: block;
+    right: 2rem;
+    top: 40%;
+    bottom: 50%;
+    transform: translateY(-50px);
     max-width: 40%;
     img{
+        border-radius: 8px;
         width: 100%;
     }
 }
@@ -67,60 +74,29 @@ body{
     .sustain-container{
         flex-direction: column;
     }
-    /* Sustainable farming div responsive */
-    .intro{
+
+    .intro , .needs ,.benefits , .goals{
         flex-direction: column;
         margin-left: 5px;
     }
-    .intro-text{
+    .intro-text , .need-text,.benefits-text{
         margin-left: 4px;
     }
 
-    .intro-img{
-        margin-top: 80rem;
-    }
-
-    #farming-img{
+    #farming-img,#need-sustain,#benefit-img{
         width: 21rem;
         margin-left: 8px;
     }
-  /* Needs div responsive */ 
-    .needs{
-        flex-direction: column;
-        margin-left: 5px;
-    }
 
-    .need-text{
-        margin-left: 4px;   
-    }
-
-    #need-sustain{
-        width: 20rem;
-        margin-left: 8px;
-    }
-
-    /* Benefits div responsive */
-    .benefits{
-        flex-direction: column;
-        margin-left: 5px;
-    }
-    .benefits-text{
-        margin-left: 4px;
-    }
-
-    #benefit-img{
-      width: 20rem;
-      margin-left: 8px;
-    }
-    /* Goals div responsive */
-    .goals{
-        flex-direction: column;
-        margin-left: 5px;
+    .goal-img{
+        position: static;
+        transform: none;
+        display: block;
+        max-width: 100%;
     }
 
     #goals-img{
-      width: 20rem;
-      margin-left: 0px;
+      width: 100%;
     }
 
 }

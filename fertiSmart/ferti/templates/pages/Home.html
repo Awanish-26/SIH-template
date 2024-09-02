@@ -2,8 +2,8 @@
 {% load static %}
 
 <!-- HOME Page Created By - Muklendra Pratap Rao -->
-<!--                                                                                                     This page is all about what we are offering through our website. 
-   We are providing services like - Soil Analysis And Fertilizer Prediction , Crop Yield Prediction  and information about Sustainable Farming.                                                                                                     -->
+<!--                                                                                                         This page is all about what we are offering through our website. 
+   We are providing services like - Soil Analysis And Fertilizer Prediction , Crop Yield Prediction  and information about Sustainable Farming.                                                                                                         -->
 
 {% block Link %}
   <link rel="stylesheet" href="{% static 'css/Home.css' %}" /> <!-- CSS file link's here -->
@@ -22,6 +22,7 @@
       <div class="hero-button">
         <p>
           Start Your Free Analysis
+          <br />
           <button class="button-1" role="button">Learn More</button>
         </p>
       </div>
@@ -38,14 +39,14 @@
       <p class="card-text">Unlock the full potential of your crops with our advanced soil analysis and fertilizer prediction tools. Accurate insights of your soil's nutrient composition, helping you make informed decisions to boost crop yield.</p>
       <a href="#" class="button">Start</a>
     </div>
-    <div>
-      <img class="card-img-top" src="{% static 'assets/soil.jpg' %}" alt="Not Availabel" />
+    <div class="card-img-top">
+      <img src="{% static 'assets/soil.jpg' %}" alt="Not Availabel" />
     </div>
   </div>
 
   <div class="card card-2">
-    <div class="">
-      <img class="card-img-top" src="{% static 'assets/crop.jpg' %}" alt="Not Availabel" />
+    <div class="card-img-top">
+      <img src="{% static 'assets/crop.jpg' %}" alt="Not Availabel" />
     </div>
     <div class="card-body">
       <h5 class="card-title">Crop Yield Prediction</h5>
@@ -60,7 +61,7 @@
       <div class="section-body">
         <h5 class="card-title">Sustainable Farming</h5>
         <hr class="separator" />
-        <p class="section-text">To know more about sustainable development please click on Know more button. Join the movement towards a greener future with our sustainable farming solutions. By adopting eco-friendly practices, you can reduce environmental impact while enhancing soil health and crop resilience. Our platform provides actionable insights and resources to help you implement sustainable methods that conserve water, reduce chemical use, and promote biodiversity.</p>
+        <p class="section-text">Join the movement towards a greener future with our sustainable farming solutions. By adopting eco-friendly practices, you can reduce environmental impact while enhancing soil health and crop resilience. Our platform provides actionable insights and resources to help you implement sustainable methods that conserve water, reduce chemical use, and promote biodiversity. To know more about sustainable development please click on Know more button.</p>
         <a href="" class="button button-sec">Know More</a>
       </div>
       <div class="section-img">

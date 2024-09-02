@@ -1,50 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 .part1{        
-    background-color: #6c757d;
-    padding-bottom: 60px;
-    color: white;
+  background-color: #409287;
+  color: white;
+  padding-bottom: 60px;
 }
-.part1 h1{
-    color:#f8c471;
-}
-.container1 h1{
-   text-align: center;
-   color:#f8c471;
-   padding: 40px 0;
-}
-.about-ferti{   /*styling background margin */
-    margin:20px 50px;
-    line-height: 35px;
-    word-spacing: 0.3rem;
-    color: #eee;
 
+.about-ferti{   /*styling background margin */
+  padding:20px 50px;
 }
-.about-sih h3{
-    margin: 5px;
-    color:#00000099;
+
+.about-ferti h2{
+  color: coral;
+  font-size: 2rem;
+  padding-bottom: 8px;
+  border-bottom: 2px solid white;
 }
-.id,.statement,.solu{
-    display: flex;
-    flex-direction: row;
-    margin: 25px 50px;
-    color:#eee;
+
+.about-ferti-para p{
+  margin-top: 8px;
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  word-spacing: 0.4rem;
 }
-.id h4,.statement h4,.solu h4{
-    font-size: 1.25rem;
-    color:#00000099;
+
+.project-info{
+  padding: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.project-info a{
+  margin: 12px;
+  display: block;
+}
+
+.btn{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem 2.4rem;
+  text-decoration: none;
+  color: #262626;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.btn:hover{
+  color: #2ecc71;
+  background-color: #262626;
+  transition: all 100ms ease-in;
 }
 
 .part2{
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 2rem;
-    padding: 4rem 10rem;
-    justify-content: space-between;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  padding: 4rem;
+  justify-content: space-between;
+}
+
+.part2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(  90deg,  rgba(255, 255, 255, 0.1) 1px,  transparent 1px), linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
 }
 
 /* Cards */
@@ -168,5 +200,16 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .about-ferti{
+      padding: 1rem;
+    }
+
+    .about-ferti h2{
+      font-size: 1.8rem;
+    }
+    .about-ferti-para p{
+      font-size: 1rem;
     }
 }
