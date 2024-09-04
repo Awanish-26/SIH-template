@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FertiSmart</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     {% block Link %}
+
     {% endblock %}
   </head>
   <body>
@@ -30,10 +32,11 @@
         <a class="text" href="{% url 'about' %}">About</a>
       </div>
     </nav>
-  
+
     <!-- Navbar Ends -->
 
     {% block content %}
+
     {% endblock %}
 
     <!-- Footer start -->
@@ -142,6 +145,10 @@
         Rotate_2.classList.toggle('rotate-2')
         Rotate_3.classList.toggle('rotate-3')
       })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init()
     </script>
   </body>
 </html>

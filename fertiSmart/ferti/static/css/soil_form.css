@@ -9,7 +9,7 @@
 
 /* main content form handling code */
 .container {
-  background: url('../assets/agriculture.jpg');
+  background:url('../assets/agriculture.jpg');
   background-size: cover;
   background-position: center; 
   width: 100%;
@@ -27,7 +27,9 @@
 }
 
 .form_content {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.75);
+  /* backdrop-filter: drop-shadow(4px 4px 10px blue); */
+  backdrop-filter: saturate(80%);
   border: none;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);

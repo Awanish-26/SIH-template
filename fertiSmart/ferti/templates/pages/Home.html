@@ -2,8 +2,8 @@
 {% load static %}
 
 <!-- HOME Page Created By - Muklendra Pratap Rao -->
-<!--                                                                                                         This page is all about what we are offering through our website. 
-   We are providing services like - Soil Analysis And Fertilizer Prediction , Crop Yield Prediction  and information about Sustainable Farming.                                                                                                         -->
+<!--                                                                                                                                    This page is all about what we are offering through our website. 
+   We are providing services like - Soil Analysis And Fertilizer Prediction , Crop Yield Prediction  and information about Sustainable Farming.                                                                                                                                    -->
 
 {% block Link %}
   <link rel="stylesheet" href="{% static 'css/Home.css' %}" /> <!-- CSS file link's here -->
@@ -21,50 +21,51 @@
       </div>
       <div class="hero-button">
         <p>
-          Start Your Free Analysis
-          <br />
-          <button class="button-1" role="button">Learn More</button>
+          <button class="btn button-0" role="button">Start Your Free Analysis</button>
+          <button class="btn button-1" role="button">Learn More</button>
         </p>
       </div>
     </div>
     <div class="hero-two">
-      <video src="{% static 'assets/intro-video.webm' %}" controls></video>
+      <video controls poster="{% static 'assets/video_thumbnail.jpg' %}">
+        <source src="{% static 'assets/intro-video.webm' %}" type="video/webm" />
+      </video>
     </div>
   </div>
 
   <div class="card card-1">
-    <div class="card-body">
+    <div class="card-body" data-aos="fade-right" data-aos-delay="50">
       <h2 class="card-title">Soil Analysis And Fertilizer Prediction</h2>
       <hr class="separator" />
       <p class="card-text">Unlock the full potential of your crops with our advanced soil analysis and fertilizer prediction tools. Accurate insights of your soil's nutrient composition, helping you make informed decisions to boost crop yield.</p>
-      <a href="#" class="button">Start</a>
+      <a href="{% url 'soilAnalysis' %}" class="button">Start Analysis</a>
     </div>
-    <div class="card-img-top">
+    <div class="card-img-top" data-aos="fade-up" data-aos-delay="50">
       <img src="{% static 'assets/soil.jpg' %}" alt="Not Availabel" />
     </div>
   </div>
 
   <div class="card card-2">
-    <div class="card-img-top">
+    <div class="card-img-top" data-aos="fade-right" data-aos-delay="50">
       <img src="{% static 'assets/crop.jpg' %}" alt="Not Availabel" />
     </div>
-    <div class="card-body">
+    <div class="card-body" data-aos="fade-left" data-aos-delay="50">
       <h5 class="card-title">Crop Yield Prediction</h5>
       <hr class="separator" />
       <p class="card-text">Harness the power of data-driven insights to predict your crop yield with precision. Our advanced prediction tools analyze key factors like soil health, weather patterns, and crop type, giving you a clear forecast to plan your farming strategy. Take the guesswork out of farming and ensure a bountiful harvest season after season.</p>
-      <a href="#" class="button">Start</a>
+      <a href="{% url 'cropYield' %}" class="button">Start Prediction</a>
     </div>
   </div>
 
   <section>
     <div class="section-contanier">
-      <div class="section-body">
+      <div class="section-body" data-aos="fade-right" data-aos-delay="50">
         <h5 class="card-title">Sustainable Farming</h5>
         <hr class="separator" />
         <p class="section-text">Join the movement towards a greener future with our sustainable farming solutions. By adopting eco-friendly practices, you can reduce environmental impact while enhancing soil health and crop resilience. Our platform provides actionable insights and resources to help you implement sustainable methods that conserve water, reduce chemical use, and promote biodiversity. To know more about sustainable development please click on Know more button.</p>
-        <a href="" class="button button-sec">Know More</a>
+        <a href="sustainability" class="button button-sec">Know More</a>
       </div>
-      <div class="section-img">
+      <div class="section-img" data-aos="fade-left" data-aos-delay="50">
         <img src="{% static 'assets/sustainable.png' %}" alt="Not Availabel" />
       </div>
     </div>

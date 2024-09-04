@@ -51,7 +51,7 @@ body{
 }
 
 .intro-text , .benefits-text , .need-text ,.goals-text {
-    font-size: 24px;
+    font-size: 20px;
     margin: 2rem 3.2rem;
 }
 
@@ -80,7 +80,7 @@ body{
         margin-left: 5px;
     }
     .intro-text , .need-text,.benefits-text{
-        margin-left: 4px;
+        margin: 4px;
     }
 
     #farming-img,#need-sustain,#benefit-img{
