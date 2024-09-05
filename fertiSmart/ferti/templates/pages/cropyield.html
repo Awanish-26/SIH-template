@@ -14,10 +14,10 @@
       <!-- form for yield prediction -->
       <form action="#" class="form">
         <label for="area">Yield Area:</label>
-        <input name="area" type="number" class="Area" placeholder=" Enter Area(in hectare)" required />
+        <input name="area" type="number" class="Area" placeholder="Enter Area(in hectare)" required />
         <!-- creating drop-down for crop type -->
         <label for="crop-type">Crop Type:</label>
-        <select class="crop-type" required>
+        <select class="crop-type" required name="crop-type">
           <option disabled selected>--Select Crop--</option>
           <option value="1">Wheat</option>
           <option value="2">Rice</option>
@@ -37,7 +37,7 @@
 
         <!-- creating drop-down for state -->
         <label for="state">State :</label>
-        <select class="state" required>
+        <select class="state" name="state" required>
           <option disabled selected>--Select State--</option>
           <option>Andhra Pradesh</option>
           <option>Arunachal Pradesh</option>
@@ -68,15 +68,17 @@
           <option>Uttarakhand</option>
           <option>West Bengal</option>
         </select>
-        <button class="btn" type="submit">Predict</button>
+        <div style="text-align: center;">
+          <button class="btn" type="submit">Predict</button>
+        </div>
       </form>
       <p class="res"></p>
     </div>
   </div>
+  {% comment %}js logic of crop yield prediction{% endcomment %}
   <script>
-    // js logic of crop yield prediction
+    //creating object which store hec/kg of certain crops
     let arr = {
-      //creating object which store hec/kg of certain crops
       1: 2577,
       2: 1904,
       3: 1039,
@@ -86,30 +88,36 @@
       7: 805,
       8: 1000
     }
+    
+    //function to predict yeild
+    let predictyeild = (yeild, crop) => {
+      let result = yeild * crop
+      return result
+    }
+    
     let btn = document.querySelector('.btn')
     let res = document.querySelector('.res')
-    btn.addEventListener('click', () => {
-      //adding eventlistner on predict button which display result when click the button
+    let form = document.querySelector('.form')
+    
+    //adding eventlistner on predict button which display result when click the button
+    form.addEventListener('submit', (event) => {
       let yeild = document.querySelector('.Area').value
       let crop = document.querySelector('.crop-type')
       let cropvalue = crop.value
       let hec = arr[cropvalue]
       let predictedoutput = predictyeild(yeild, hec)
       res.innerText = `Perdicted yield is ${predictedoutput} kg`
-    })
-    btn.addEventListener('mouseout', (event) => {
-      //adding eventlistner on btn when  mouse over other element other than btn
+      btn.setAttribute('type', 'reset')
+      btn.textContent = 'Reset'
       event.preventDefault()
-      let form = document.querySelector('.form')
+    })
+    
+    //adding eventlistner on btn when  mouse over other element other than btn
+    form.addEventListener('reset', (event) => {
+      btn.setAttribute('type', 'submit')
+      btn.textContent = 'Predict'
+      res.innerText = ''
       form.reset()
     })
-    btn.addEventListener('mouseout', () => {
-      res.innerText = ''
-    })
-    let predictyeild = (yeild, crop) => {
-      //function to predict yeild
-      let result = yeild * crop
-      return result
-    }
   </script>
 {% endblock %}
