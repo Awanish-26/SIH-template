@@ -17,7 +17,8 @@
         <input name="area" type="number" class="Area" placeholder=" Enter Area(in hectare)" required />
         <!-- creating drop-down for crop type -->
         <label for="crop-type">Crop Type:</label>
-        <select class="crop-type">
+        <select class="crop-type" required>
+          <option disabled selected>--Select Crop--</option>
           <option value="1">Wheat</option>
           <option value="2">Rice</option>
           <option value="3">Cereals</option>
@@ -36,7 +37,8 @@
 
         <!-- creating drop-down for state -->
         <label for="state">State :</label>
-        <select class="state">
+        <select class="state" required>
+          <option disabled selected>--Select State--</option>
           <option>Andhra Pradesh</option>
           <option>Arunachal Pradesh</option>
           <option>Assam</option>
@@ -66,8 +68,8 @@
           <option>Uttarakhand</option>
           <option>West Bengal</option>
         </select>
+        <button class="btn" type="submit">Predict</button>
       </form>
-      <button class="btn" type="submit">Predict</button>
       <p class="res"></p>
     </div>
   </div>
